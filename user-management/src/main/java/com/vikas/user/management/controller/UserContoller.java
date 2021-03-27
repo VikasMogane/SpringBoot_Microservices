@@ -2,6 +2,7 @@ package com.vikas.user.management.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -13,18 +14,34 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.vikas.user.management.payload.UserPayload;
+import com.vikas.user.management.repository.UserRepository;
+import com.vikas.user.management.services.UserService;
+
 @RestController
 @RequestMapping("/user")
 public class UserContoller {
 
 	private static final Logger logger = LoggerFactory.getLogger(UserContoller.class);
 	
+	@Autowired
+	protected UserService userService;
 	
 	@PostMapping(value ="/")
-	public ResponseEntity<String> createUser( @RequestBody String data)
+	public ResponseEntity<UserPayload> createUser( @RequestBody UserPayload data)
 	{
 		logger.info("received request to create user ");
-		return new ResponseEntity<>("User Created Success",HttpStatus.OK);
+		try
+		{
+			data  = userService.createUser(data);
+		}
+		catch(Exception e)
+		{
+			return new ResponseEntity<>(null,HttpStatus.BAD_REQUEST);
+
+		}
+		
+		return new ResponseEntity<>(data,HttpStatus.OK);
 	}
 
 	
