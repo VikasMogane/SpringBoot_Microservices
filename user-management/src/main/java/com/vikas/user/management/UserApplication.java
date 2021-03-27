@@ -1,5 +1,6 @@
 package com.vikas.user.management;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
@@ -11,6 +12,6 @@ public class UserApplication
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello world completed first step!" );
+        SpringApplication.run(UserApplication.class, args);
     }
 }
