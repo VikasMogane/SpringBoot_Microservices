@@ -35,5 +35,6 @@
 
   <modules>
     <module>user-management</module>
+    <module>subscription-management</module>
   </modules>
 </project>

@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Hello world!
  *
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.vikas.user"})
 public class UserApplication 
 {
     public static void main( String[] args )
