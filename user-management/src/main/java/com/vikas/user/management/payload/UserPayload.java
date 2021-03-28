@@ -4,6 +4,13 @@ import java.util.Date;
 
 import com.vikas.user.management.entity.User;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter @Setter  @AllArgsConstructor @NoArgsConstructor
+
 public class UserPayload {
 
 	private String id;
@@ -14,42 +21,7 @@ public class UserPayload {
 	
 	private SubscriptionPayload subscriptions;
 	
-	public SubscriptionPayload getSubscriptions() {
-		return subscriptions;
-	}
-	public void setSubscriptions(SubscriptionPayload subscriptions) {
-		this.subscriptions = subscriptions;
-	}
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
-	public String getFirstName() {
-		return firstName;
-	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-	public String getLastName() {
-		return lastName;
-	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-	public Integer getAge() {
-		return age;
-	}
-	public void setAge(Integer age) {
-		this.age = age;
-	}
-	public Date getCreatedDate() {
-		return createdDate;
-	}
-	public void setCreatedDate(Date createdDate) {
-		this.createdDate = createdDate;
-	}
+	
 	public User mapToModel() {
 		
 		return  new User(getFirstName(),getLastName(),getAge());
@@ -64,10 +36,7 @@ public class UserPayload {
 		setCreatedDate(user.getCreatedDate());
 	}
 	
-	public UserPayload() 
-	{
-		
-	}
+
 	public UserPayload(User user, SubscriptionPayload subscriptionpayload) {
 		this(user);
 		setSubscriptions(subscriptionpayload);
