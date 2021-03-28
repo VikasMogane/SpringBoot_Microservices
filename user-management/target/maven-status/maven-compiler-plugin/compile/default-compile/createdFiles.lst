@@ -1,6 +1,6 @@
 com\vikas\user\management\controller\UserContoller.class
-com\vikas\user\management\repository\UserRepository.class
 com\vikas\user\management\services\UserService.class
+com\vikas\user\management\entity\User.class
+com\vikas\user\management\repository\UserRepository.class
 com\vikas\user\management\payload\UserPayload.class
 com\vikas\user\management\UserApplication.class
-com\vikas\user\management\entity\User.class
