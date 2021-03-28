@@ -21,9 +21,8 @@ public class UserApplication
     @Bean
     public RestTemplate getRestTemplate()
     {
-    	RestTemplate restTemplate = new RestTemplate();
-    	restTemplate.setRequestFactory(new HttpComponentsClientHttpRequestFactory());
-    	return restTemplate;
+    	return new RestTemplate();
+    	
     
     }
     
