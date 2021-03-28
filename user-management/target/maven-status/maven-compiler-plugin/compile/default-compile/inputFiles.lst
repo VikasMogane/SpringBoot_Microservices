@@ -2,5 +2,6 @@ C:\Users\User\eclipse_workspace_Dec_2020\vikas-springboot-sample\user-management
 C:\Users\User\eclipse_workspace_Dec_2020\vikas-springboot-sample\user-management\src\main\java\com\vikas\user\management\UserApplication.java
 C:\Users\User\eclipse_workspace_Dec_2020\vikas-springboot-sample\user-management\src\main\java\com\vikas\user\management\services\UserService.java
 C:\Users\User\eclipse_workspace_Dec_2020\vikas-springboot-sample\user-management\src\main\java\com\vikas\user\management\repository\UserRepository.java
+C:\Users\User\eclipse_workspace_Dec_2020\vikas-springboot-sample\user-management\src\main\java\com\vikas\user\management\payload\SubscriptionPayload.java
 C:\Users\User\eclipse_workspace_Dec_2020\vikas-springboot-sample\user-management\src\main\java\com\vikas\user\management\payload\UserPayload.java
 C:\Users\User\eclipse_workspace_Dec_2020\vikas-springboot-sample\user-management\src\main\java\com\vikas\user\management\entity\User.java

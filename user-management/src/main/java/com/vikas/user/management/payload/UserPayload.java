@@ -12,6 +12,14 @@ public class UserPayload {
 	private Integer age;
 	private Date createdDate;
 	
+	private SubscriptionPayload subscriptions;
+	
+	public SubscriptionPayload getSubscriptions() {
+		return subscriptions;
+	}
+	public void setSubscriptions(SubscriptionPayload subscriptions) {
+		this.subscriptions = subscriptions;
+	}
 	public String getId() {
 		return id;
 	}
@@ -59,6 +67,10 @@ public class UserPayload {
 	public UserPayload() 
 	{
 		
+	}
+	public UserPayload(User user, SubscriptionPayload subscriptionpayload) {
+		this(user);
+		setSubscriptions(subscriptionpayload);
 	}
 	
 }
