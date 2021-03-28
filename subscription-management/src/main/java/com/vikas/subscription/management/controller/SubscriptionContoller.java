@@ -39,6 +39,9 @@ public class SubscriptionContoller {
 		catch(Exception e)
 		{
 			return new ResponseEntity<>(null,HttpStatus.BAD_REQUEST);
+			
+			
+			
 
 		}
 		
