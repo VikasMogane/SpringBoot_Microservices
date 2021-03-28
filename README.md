@@ -51,3 +51,14 @@ All steps
 java -jar subscription-management\target\subscription-management-1.0.jar
 
 java -jar user-management\target\user-management-1.0.jar
+
+
+
+-----------------------
+
+![Screenshot (41)](https://user-images.githubusercontent.com/35216185/112749004-33879500-8fdd-11eb-98cf-5f1bf11330d3.png)
+![Screenshot (40)](https://user-images.githubusercontent.com/35216185/112749007-34b8c200-8fdd-11eb-8674-a79c4ab55b92.png)
+![Screenshot (39)](https://user-images.githubusercontent.com/35216185/112749008-35e9ef00-8fdd-11eb-9e28-1afb2e13a6b4.png)
+![Screenshot (38)](https://user-images.githubusercontent.com/35216185/112749009-36828580-8fdd-11eb-98d5-b682f459be28.png)
+![Screenshot (43)](https://user-images.githubusercontent.com/35216185/112749010-371b1c00-8fdd-11eb-9df2-49688b6fb3fd.png)
+![Screenshot (42)](https://user-images.githubusercontent.com/35216185/112749011-37b3b280-8fdd-11eb-8258-130ecbac1f1c.png)
