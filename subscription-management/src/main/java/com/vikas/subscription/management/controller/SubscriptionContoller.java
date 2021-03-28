@@ -47,13 +47,13 @@ public class SubscriptionContoller {
 
 	
 	@GetMapping(value ="/{userId}")
-	public ResponseEntity<SubscriptionPayload> getSubscription( @PathVariable String SubscriptionId)
+	public ResponseEntity<SubscriptionPayload> getSubscription( @PathVariable String userId)
 	{
 		logger.info("Receiver request to get Subscription   ");
 
 		try
 		{
-		 SubscriptionPayload data  = SubscriptionService.getSubscription(SubscriptionId);
+		 SubscriptionPayload data  = SubscriptionService.getSubscription(userId);
 		 return new ResponseEntity<>(data,HttpStatus.OK);
 		}
 		catch(Exception e)
