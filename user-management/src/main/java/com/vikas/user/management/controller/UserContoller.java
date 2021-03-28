@@ -56,10 +56,21 @@ public class UserContoller {
 	
 	
 	@GetMapping(value ="/{userId}")
-	public ResponseEntity<String> getUserMessage( @PathVariable String userId)
+	public ResponseEntity<UserPayload> getUser( @PathVariable String userId)
 	{
 		logger.info("Receiver request to get user   ");
-		return new ResponseEntity<>("User get Success : "+userId.toUpperCase(),HttpStatus.OK);
+
+		try
+		{
+		 UserPayload data  = userService.getUser(userId);
+		 return new ResponseEntity<>(data,HttpStatus.OK);
+		}
+		catch(Exception e)
+		{
+			return new ResponseEntity<>(null,HttpStatus.NOT_FOUND);
+
+		}
+		
 	}
 	
 	

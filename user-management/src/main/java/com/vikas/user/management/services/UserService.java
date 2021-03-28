@@ -38,4 +38,18 @@ public class UserService
 	}
 	
 	
+	public UserPayload getUser(String userId)
+	{
+		User user = userRepository.findOne(userId);
+		
+		if(user == null)
+		{
+			throw new IllegalArgumentException();
+		}
+		
+		return new UserPayload(user);
+		
+	}
+	
+	
 }
