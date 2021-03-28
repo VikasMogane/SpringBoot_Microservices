@@ -27,7 +27,7 @@ public class SubscriptionContoller {
 	@Autowired
 	protected SubscriptionService SubscriptionService;
 	
-	@PostMapping(value ="/{userId}/default")
+	@GetMapping(value ="/{userId}/default")
 	public ResponseEntity<SubscriptionPayload> createUser( @PathVariable String userId)
 	{
 		logger.info("received request to create Subscription ");

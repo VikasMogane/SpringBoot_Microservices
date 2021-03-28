@@ -39,6 +39,7 @@ public class SubscriptionService
 			subscription.setStartDate(new Date());
 			subscription.setExpiryDate(Date.from(Instant.now().plus(7,ChronoUnit.DAYS)));
 		}
+		subscription.setUserId(userId);
 		subscriptionRepository.save(subscription);
 			
 		
