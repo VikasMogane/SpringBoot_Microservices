@@ -4,5 +4,27 @@ spring:
   data:
     mongodb:
       database: subscription-management
+  profiles:
+    active: dev
+    
+ 
+---
+spring:
+  profiles: dev
+  data:
+    mongodb:
       uri: mongodb://localhost:27017
+---
+spring:
+  profiles: stg
+  data:
+    mongodb:
+      uri: mongodb://stg.vikas.com:Password@13.12.1.9:27017
+      
+---
+spring:
+  profiles: prod
+  data:
+    mongodb:
+      uri: mongodb://prod-url:Password@IP:27017
   
