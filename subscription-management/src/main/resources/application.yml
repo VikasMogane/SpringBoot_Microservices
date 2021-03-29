@@ -14,17 +14,32 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017
+ subscr
+  swagger:
+    baseurl: /     
+    api:
+  key: vikas     
+      
 ---
 spring:
   profiles: stg
   data:
     mongodb:
       uri: mongodb://stg.vikas.com:Password@13.12.1.9:27017
-      
+ subscription:
+  swagger:
+    baseurl: /     
+    api:
+  key: vikasm    
 ---
 spring:
   profiles: prod
   data:
     mongodb:
       uri: mongodb://prod-url:Password@IP:27017
+   subscription:
+  swagger:
+    baseurl: /     
+    api:
+  key: vikasS   
   

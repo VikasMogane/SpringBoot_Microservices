@@ -1,6 +1,9 @@
 com\vikas\subscription\management\controller\SubscriptionContoller.class
 com\vikas\subscription\management\entity\Subscription.class
+com\vikas\subscription\management\schedular\ExpiredSchedular.class
 com\vikas\subscription\management\repository\SubscriptionRepository.class
 com\vikas\subscription\management\SubscriptinManagementApplication.class
+com\vikas\subscription\management\configuration\SubscriptionConfig.class
+com\vikas\subscription\management\configuration\SwaggerConfig.class
 com\vikas\subscription\management\payload\SubscriptionPayload.class
 com\vikas\subscription\management\services\SubscriptionService.class
